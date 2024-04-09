@@ -38,7 +38,7 @@ const UserList = () => {
 
   return (
     <>
-    {data ? (<div className='max-h-[60vh] w-9/12 p-4 my-6 overflow-auto border rounded'>
+    {data ? (<div className='max-h-[60vh] w-[90vw] lg:w-9/12 px-4 m-6 overflow-auto border rounded'>
         <Table>
       <TableCaption>A list of fetched users.</TableCaption>
       <TableHeader>
@@ -59,7 +59,7 @@ const UserList = () => {
             <TableCell>{d.gender}</TableCell>
             <TableCell>{d.age}</TableCell>
             <TableCell>{d.email}</TableCell>
-            <TableCell className="text-right">{d.phone}</TableCell>
+            <TableCell className="text-right text-nowrap">{d.phone}</TableCell>
           </TableRow>
         ))}
       </TableBody>
